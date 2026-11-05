@@ -26,11 +26,13 @@ they would hit "velvet", "revetment" etc.)
 | Field | XPath |
 |---|---|
 | Address | `//main//h1` |
-| Description | `//h2[normalize-space()='Description']/following-sibling::*[1]` |
-| Council | `//h2[normalize-space()='Planning Authority']/following-sibling::*[1]` |
-| Reference | `//h2[normalize-space()='Reference number']/following-sibling::*[1]` |
+| Description | `//dt[normalize-space()='Description']/following-sibling::dd[1]//text()[normalize-space()][1]` |
+| Council | `//dt[normalize-space()='Planning Authority']/following-sibling::dd[1]//text()[normalize-space()][1]` |
+| Reference | `//dt[normalize-space()='Reference number']/following-sibling::dd[1]//text()[normalize-space()][1]` |
 | Council link | `//a[contains(@href,'/external')]/@href` (prefix https://www.planningalerts.org.au) |
 | PlanningAlerts link | page URL |
+
+(Selectors checked against a live application page on 5 Nov 2026.)
 
 ## 4. Duplicates
 Each daily run overlaps yesterday's pages. Turn on Octoparse's duplicate
