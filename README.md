@@ -37,3 +37,14 @@ traffic, so scrapers for those will need an Australian host.
 
 One run per day, at most ~1 request/second, generic `User-Agent`. Never try to
 get around CAPTCHAs or bot blocking.
+
+## Filtering
+
+`filters.py` tags each DA as `childcare`, `medical`, `veterinary` and/or
+`hospital` using keyword patterns (with exclusions such as pool
+"child-resistant barriers"). Only tagged DAs get pushed on. Edit the lists at
+the top of the file to change what counts.
+
+```bash
+python filters.py 30     # show matches from the last 30 days
+```
