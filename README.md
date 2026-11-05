@@ -7,7 +7,7 @@ into one SQLite database, ready to push into monday.com.
 
 | Source | File | Coverage | Method |
 |---|---|---|---|
-| NSW Planning Portal | `sources/nsw_planning_portal.py` | ~122 NSW councils | Official public API (no scraping) |
+| NSW Planning Portal | `sources/nsw_planning_portal.py` | ~122 NSW councils: DAs, CDCs and construction certificates | Official public APIs (no scraping) |
 
 More states to come — preference order: official API/open data → shared tracker
 platform (one scraper, many councils) → one-off council scraper.
@@ -47,4 +47,17 @@ the top of the file to change what counts.
 
 ```bash
 python filters.py 30     # show matches from the last 30 days
+```
+
+## monday.com
+
+`push_monday.py` sends matching DAs to the **DA Tracking** board
+(childcare/medical/hospital → "New Leads - Childcare & Medical", vet →
+"New Leads - Vet & Animal"). It skips anything whose name + council is already
+on the board. The daily workflow runs it when the `MONDAY_API_TOKEN` repo secret
+is set.
+
+```bash
+python push_monday.py 2026-10-16 --dry-run   # preview
+MONDAY_API_TOKEN=... python push_monday.py    # last 7 days
 ```
