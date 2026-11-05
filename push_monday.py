@@ -4,12 +4,14 @@
     MONDAY_API_TOKEN=... python push_monday.py 2026-10-16   # matches lodged since a date
     python push_monday.py 2026-10-16 --dry-run               # show what would be sent
 
-Duplicates are skipped: a DA is only created if no item with the same name
-(council reference) and council already exists on the board, and every DA we
-send is remembered in the `pushed` table so it is never sent twice.
+Duplicates are skipped: a DA is not created if the board already has an item
+for the same council with the same reference number OR the same street address
+(so a site that comes through again as a new application isn't added twice).
+NSW CDCs, construction certificates, modifications and reviews are never sent.
 """
 import json
 import os
+import re
 import sqlite3
 import sys
 import time
@@ -44,6 +46,35 @@ COUNCIL_ALIASES = {
 }
 
 
+# Application types we never send (too late in the process, or a repeat of an
+# earlier application for the same project).
+SKIP_TYPES = {
+    "Complying Development Certificate Application",
+    "Construction Certificate",
+    "Modification Application",
+    "Review of determination",
+}
+
+_ABBREV = {"ROAD": "RD", "STREET": "ST", "AVENUE": "AV", "AVE": "AV", "DRIVE": "DR", "PLACE": "PL",
+           "COURT": "CT", "CRESCENT": "CRES", "HIGHWAY": "HWY", "PARADE": "PDE", "TERRACE": "TCE",
+           "CLOSE": "CL", "CIRCUIT": "CCT", "BOULEVARD": "BVD", "LANE": "LN", "GROVE": "GR"}
+_STATES = {"NSW", "ACT", "QLD", "SA", "VIC", "WA", "TAS", "NT", "AUSTRALIA"}
+
+
+def norm_address(addr):
+    """'142 Old Pitt Town Road, Box Hill NSW 2765' and '142 OLD PITT TOWN RD BOX HILL 2765'
+    both become '142 OLD PITT TOWN RD BOX HILL'."""
+    if not addr:
+        return ""
+    words = re.sub(r"[^A-Z0-9 ]", " ", addr.upper().replace(" -", "-")).split()
+    words = [_ABBREV.get(w, w) for w in words if w not in _STATES and not re.fullmatch(r"\d{4}", w)]
+    return " ".join(words)
+
+
+def norm_ref(ref):
+    return re.sub(r"[^A-Z0-9]", "", (ref or "").upper())
+
+
 def money(v):
     if not v:
         return ""
@@ -74,6 +105,7 @@ def build_item(row, tags):
         "key": row["id"],
         "name": (row["council_reference"] or row["id"])[:255],
         "council": council,
+        "address_key": norm_address(row["address"]),
         "group": GROUP_VET if tags[0] == "veterinary" else GROUP_CHILDCARE_MEDICAL,
         "columns": columns,
     }
@@ -83,11 +115,20 @@ def pending_items(since, db):
     db.execute("CREATE TABLE IF NOT EXISTS pushed (id PRIMARY KEY, monday_item_id, pushed_at)")
     done = {r[0] for r in db.execute("SELECT id FROM pushed")}
     items = []
+    seen = set()
     for row, tags in matches(DB, since=since):
+        if row["id"] in done or row["application_type"] in SKIP_TYPES:
+            continue
         # vets first so a "vet hospital" lands in the vet group
         tags = sorted(tags, key=lambda t: t != "veterinary")
-        if row["id"] not in done:
-            items.append(build_item(row, tags))
+        item = build_item(row, tags)
+        # one item per site: e.g. Toowoomba lodges MCU, RAL and OWS for the same address
+        akey = (item["council"], item["address_key"]) if item["address_key"] else None
+        if akey and akey in seen:
+            continue
+        if akey:
+            seen.add(akey)
+        items.append(item)
     return items
 
 
@@ -107,11 +148,29 @@ def gql(query, variables=None):
     return out["data"]
 
 
-def already_on_board(name, council):
-    q = """query($b:ID!,$v:[String]!){items_page_by_column_values(board_id:$b,limit:50,
-           columns:[{column_id:"name",column_values:$v}]){items{id column_values(ids:["council"]){text}}}}"""
-    items = gql(q, {"b": BOARD_ID, "v": [name]})["items_page_by_column_values"]["items"]
-    return any((i["column_values"][0]["text"] or "").strip() == council for i in items)
+def board_index():
+    """Reference numbers and addresses already on the board (any group, any status)."""
+    refs, addrs = set(), set()
+    q = """query($b:ID!,$c:String){boards(ids:[$b]){items_page(limit:500,cursor:$c){cursor
+           items{name column_values(ids:["text0","council"]){id text}}}}}"""
+    cursor = None
+    while True:
+        page = gql(q, {"b": BOARD_ID, "c": cursor})["boards"][0]["items_page"]
+        for it in page["items"]:
+            cv = {c["id"]: (c["text"] or "").strip() for c in it["column_values"]}
+            refs.add((cv.get("council"), norm_ref(it["name"])))
+            if cv.get("text0"):
+                addrs.add((cv.get("council"), norm_address(cv["text0"])))
+        cursor = page["cursor"]
+        if not cursor:
+            return refs, addrs
+
+
+def already_on_board(item, index):
+    refs, addrs = index
+    if (item["council"], norm_ref(item["name"])) in refs:
+        return True
+    return bool(item["address_key"]) and (item["council"], item["address_key"]) in addrs
 
 
 def create(item):
@@ -135,8 +194,9 @@ def main():
             print(f"{len(items)} items would be sent")
         return
     created = skipped = 0
+    index = board_index() if items else (set(), set())
     for item in items:
-        if already_on_board(item["name"], item["council"]):
+        if already_on_board(item, index):
             mid = "existing"
             skipped += 1
         else:
@@ -145,7 +205,7 @@ def main():
             time.sleep(0.5)
         db.execute("INSERT OR REPLACE INTO pushed VALUES (?,?,?)", (item["key"], mid, date.today().isoformat()))
         db.commit()
-    print(f"monday.com: {created} created, {skipped} already on board")
+    print(f"monday.com: {created} created, {skipped} skipped (same reference or address already on board)")
 
 
 if __name__ == "__main__":

@@ -21,7 +21,10 @@ import urllib.request
 from datetime import date, datetime, timedelta
 
 API_BASE = "https://api.apps1.nsw.gov.au/eplanning/data/v0/"
-FEEDS = {"OnlineDA": "DA", "OnlineCDC": "CDC", "OnlineCC": "CC"}
+# CDCs and construction certificates are too late in the process for us, and they
+# repeat projects that already came through as DAs. Add them back here if needed:
+#   "OnlineCDC": "CDC", "OnlineCC": "CC"
+FEEDS = {"OnlineDA": "DA"}
 PORTAL_URL = "https://www.planningportal.nsw.gov.au/"  # no public per-app page; council ref is the key
 DB = os.environ.get("DB_PATH", "data/das.sqlite")
 SOURCE = "nsw_planning_portal"
