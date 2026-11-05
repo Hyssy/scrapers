@@ -19,6 +19,7 @@ import urllib.request
 from datetime import date, timedelta
 
 from filters import matches
+from links import council_link
 
 BOARD_ID = 5589886642
 DB = os.environ.get("DB_PATH", "data/das.sqlite")
@@ -99,8 +100,15 @@ def build_item(row, tags):
         "date4": {"date": row["date_received"]},
         "date": {"date": date.today().isoformat()},
     }
-    if row.get("info_url"):
-        columns["link"] = {"url": row["info_url"], "text": "Council Link"}
+    try:
+        raw = json.loads(row["raw"] or "{}")
+    except ValueError:
+        raw = {}
+    url, kind = council_link(row["authority_label"], row["council_reference"], raw)
+    url = url or row.get("info_url")
+    if url:
+        text = {"deep": "Open DA on council site", "search": "Council DA search"}.get(kind, "Council tracker")
+        columns["link"] = {"url": url, "text": text}
     return {
         "key": row["id"],
         "name": (row["council_reference"] or row["id"])[:255],

@@ -1,0 +1,1402 @@
+{
+ "ACT Planning & Land Authority": {
+  "url": "https://www.planning.act.gov.au/applications-and-assessments/development-applications/browse-das/development-application-details?da-number={raw.DA_NUMBER}",
+  "ref": "none",
+  "kind": "deep",
+  "checked": false,
+  "note": "Pattern from PlanningAlerts. planning.act.gov.au serves a Cloudflare challenge to this machine - not verified."
+ },
+ "Adelaide (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Adelaide Hills (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Adelaide Plains (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Albury City Council": {
+  "url": "https://eservice.alburycity.nsw.gov.au/ApplicationTracker/Application/ApplicationDetails/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView tracker; Format confirmed via PlanningAlerts (15.2015.33933.1 -> 015.2015.00033933.001). Host resets connections from this machine (geo-block), not fetched."
+ },
+ "Alexandrina (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Armidale Regional Council": {
+  "url": "https://epathway.newengland.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "Infor ePathway: session-based, no deep link. Fallback = enquiry list page; user picks the application search and enters the ref."
+ },
+ "Ballina Shire Council": {
+  "url": "https://da.ballina.nsw.gov.au/Application/ApplicationDetails/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView tracker; redirects to a Disclaimer page first (requires Agree, after which the deep link works). Mapping confirmed via PlanningAlerts."
+ },
+ "Balranald Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Not on PlanningAlerts with recent apps and not on the NSW Planning Portal council-tracker list; no tracker found. Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Barossa (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Barunga West (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Bathurst Regional Council": {
+  "url": "http://masterview.bathurst.nsw.gov.au/Application/ApplicationDetails/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView (per NSW Planning Portal tracker list); not on PlanningAlerts recently; hostname does not resolve from this machine."
+ },
+ "Bayside Council": {
+  "url": "https://eplanning.bayside.nsw.gov.au/ePlanning/Pages/XC.Track/SearchApplication.aspx",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "XC.Track tracker: deep links need an internal numeric id (SearchApplication.aspx?id=NNN), not the council ref; ref lookup is via a POST autocomplete only. Fallback is the search page (type the ref). (Not on PlanningAlerts recently; URL from NSW Planning Portal tracker list.)"
+ },
+ "Bega Valley Shire Council": {
+  "url": "https://www.begavalley-nsw.altitudelg.com/e-services/daEnquiry/currentlyAdvertised.do",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "Altitude (ex-Civica) e-services; no deep link by ref. PA links to the currently-advertised list."
+ },
+ "Bellingen Shire Council": {
+  "url": "https://bellingen.greenlightopm.com/search-applications",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "Greenlight OPM: PlanningAlerts deep links use an internal trackingNumber, not the ref; search UI is a JS app. Fallback = search page."
+ },
+ "Berri Barmera (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Berrigan Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Not on PlanningAlerts with recent apps and not on the NSW Planning Portal council-tracker list; no tracker found. Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Blacktown City Council": {
+  "url": "https://blacktown-web.t1cloud.com/T1PRDefault/WebApps/eProperty/P1/eTrack/eTrackApplicationDetails.aspx?ApplicationId={ref}&f=%24P1.ETR.APPDET.VIW&r=BCC.P1.WEBGUEST",
+  "ref": "urlencode",
+  "kind": "deep",
+  "checked": false,
+  "note": "TechnologyOne eProperty eTrack. Pattern taken from PlanningAlerts link. *.t1cloud.com blocks this machine's IP (TechnologyOne SaaS 'IP blocked' page), so could not fetch; should work from AU."
+ },
+ "Bland Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Not on PlanningAlerts with recent apps and not on the NSW Planning Portal council-tracker list; no tracker found. Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Blayney Shire Council": {
+  "url": "https://blayney.greenlightopm.com/search-applications",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "Greenlight OPM: PlanningAlerts deep links use an internal trackingNumber, not the ref; search UI is a JS app. Fallback = search page."
+ },
+ "Blue Mountains City Council": {
+  "url": "https://www2.bmcc.nsw.gov.au/DATracking/Pages/XC.Track/SearchApplication.aspx",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "XC.Track tracker: deep links need an internal numeric id (SearchApplication.aspx?id=NNN), not the council ref; ref lookup is via a POST autocomplete only. Fallback is the search page (type the ref). Requires accepting a Terms and Conditions page first (redirects to Common/Common/terms.aspx)."
+ },
+ "Bogan Shire Council": {
+  "url": "https://datracker.bogan.nsw.gov.au/MasterView/Application/ApplicationDetails/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView (path guessed from tracker home /MasterView/Home/Index); proxy could not connect (502) - not verified."
+ },
+ "Bourke Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Not on PlanningAlerts with recent apps and not on the NSW Planning Portal council-tracker list; no tracker found. Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Brisbane City Council": {
+  "url": "https://developmenti.brisbane.qld.gov.au/Home/FilterDirect?filters=DANumber={ref}",
+  "ref": "none",
+  "kind": "deep",
+  "checked": false,
+  "note": "Development.i FilterDirect link (same pattern PlanningAlerts uses). Verified 200 'Results | Development.i' page; results are rendered by JS so the ref is not in the raw HTML."
+ },
+ "Broken Hill City Council": {
+  "url": "http://datracker.brokenhill.nsw.gov.au/Application/ApplicationDetails/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView. Hostname does not resolve from this machine."
+ },
+ "Burnside (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Burwood Council": {
+  "url": "https://www.burwood.nsw.gov.au/Planning-Building/Track-a-Development-Application",
+  "ref": "none",
+  "kind": "home",
+  "checked": false,
+  "note": "Council page linking to its MasterView DA tracker (requires agreeing to conditions). Tracker host not identified: council site returns 403 to this machine and Burwood isn't on PlanningAlerts recently. Ref format e.g. DA.2026.77."
+ },
+ "Byron Shire Council": {
+  "url": "https://datracker.byron.nsw.gov.au/masterviewui-external/application/ApplicationDetails/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": true,
+  "note": "MasterView. Verified: 200, page shows the application, address and plan documents (no disclaimer gate)."
+ },
+ "Cabonne Shire Council": {
+  "url": "https://www.cabonne.nsw.gov.au/Development/Development-Applications/Development-Application-Tracker",
+  "ref": "none",
+  "kind": "home",
+  "checked": false,
+  "note": "Council DA tracker page (found via web search); no deep link known."
+ },
+ "Camden Council": {
+  "url": "https://eservice.camden.nsw.gov.au/eservice/daEnquiryInit.do?doc_typ=10&nodeNum=3374010",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "Civica Authority e-Services: results are session-based (GET search by number returns 'Navigation Problem'); fallback = DA enquiry form. The form's DA Number field expects 'NNN/YYYY' (DA/2026/514/1 -> 514/2026)."
+ },
+ "Campbelltown (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Campbelltown City Council": {
+  "url": "https://cccprd-pwy-epw01.cloud.infor.com/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "Infor ePathway: session-based, no deep link. Fallback = enquiry list page; user picks the application search and enters the ref."
+ },
+ "Canterbury-Bankstown Council": {
+  "url": "https://eplanning.cbcity.nsw.gov.au/ApplicationSearch?mode=search-application-number&applicationNumber={ref}",
+  "ref": "urlencode",
+  "kind": "deep",
+  "checked": true,
+  "note": "Verified: redirects to ApplicationSearch/ApplicationDetails?applicationNumber=...; 200 and shows the ref and address."
+ },
+ "Carrathool Shire Council": {
+  "url": "https://datracker.carrathool.nsw.gov.au/Application/ApplicationDetails/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView tracker; redirects to a Disclaimer page first (requires Agree, after which the deep link works). Not verifiable without Agree."
+ },
+ "Ceduna (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Central Coast Council": {
+  "url": "https://eservices.centralcoast.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "Infor ePathway: session-based, no deep link. Fallback = enquiry list page; user picks the application search and enters the ref."
+ },
+ "Central Darling Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Not on PlanningAlerts with recent apps and not on the NSW Planning Portal council-tracker list; no tracker found. Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Cessnock City Council": {
+  "url": "https://datracker.cessnock.nsw.gov.au/Application/ApplicationDetails/{ref}",
+  "ref": "masterview_slash",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView tracker; redirects to a Disclaimer page first (requires Agree, after which the deep link works). Not verifiable without clicking Agree."
+ },
+ "Charles Sturt (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "City of Canada Bay Council": {
+  "url": "https://canadabay-eplanning.t1cloud.com/Pages/XC.Track/SearchApplication.aspx",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "XC.Track tracker: deep links need an internal numeric id (SearchApplication.aspx?id=NNN), not the council ref; ref lookup is via a POST autocomplete only. Fallback is the search page (type the ref)."
+ },
+ "City of Parramatta Council": {
+  "url": "https://onlineservices.cityofparramatta.nsw.gov.au/ePathway/Prod/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "Infor ePathway: session-based, no deep link. Fallback = enquiry list page; user picks the application search and enters the ref."
+ },
+ "Clare and Gilbert Valleys (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Clarence Valley Council": {
+  "url": "https://cvc-web.t1cloud.com/T1PRDefault/WebApps/eProperty/P1/eTrack/eTrackApplicationDetails.aspx?ApplicationId={ref}&f=%24P1.ETR.APPDET.VIW&r=CVC.P1.WEBGUEST",
+  "ref": "urlencode",
+  "kind": "deep",
+  "checked": false,
+  "note": "TechnologyOne eProperty eTrack. Pattern taken from PlanningAlerts link. *.t1cloud.com blocks this machine's IP (TechnologyOne SaaS 'IP blocked' page), so could not fetch; should work from AU."
+ },
+ "Cleve (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Cobar Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Council uses the NSW Planning Portal only (not on the Portal's council-tracker list). Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Coffs Harbour City Council": {
+  "url": "https://chcc-icon.saas.t1cloud.com/Public/Pages/XC.Track/SearchApplication.aspx",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "XC.Track tracker: deep links need an internal numeric id (SearchApplication.aspx?id=NNN), not the council ref; ref lookup is via a POST autocomplete only. Fallback is the search page (type the ref)."
+ },
+ "Coolamon Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Council uses the NSW Planning Portal only (not on the Portal's council-tracker list). Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Coonamble Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Not on PlanningAlerts with recent apps and not on the NSW Planning Portal council-tracker list; no tracker found. Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Coorong (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Cootamundra-Gundagai Regional Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Council uses the NSW Planning Portal only (not on the Portal's council-tracker list). Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Copper Coast (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Council of the City of Sydney": {
+  "url": "https://eplanning.cityofsydney.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "XC.Track tracker: deep links need an internal numeric id (SearchApplication.aspx?id=NNN), not the council ref; ref lookup is via a POST autocomplete only. Fallback is the search page (type the ref)."
+ },
+ "Cowra Shire Council": {
+  "url": "https://mycouncil.solorient.com.au/Horizon/logonGuest.aw?domain=horizondap_cowra",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "Horizon (Solorient) tracker: session-based guest login, no deep link. Fallback = guest logon/home."
+ },
+ "Cumberland Council": {
+  "url": "https://cumberland-eplanning.t1cloud.com/Pages/XC.Track/SearchApplication.aspx",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "XC.Track tracker: deep links need an internal numeric id (SearchApplication.aspx?id=NNN), not the council ref; ref lookup is via a POST autocomplete only. Fallback is the search page (type the ref). t1cloud host - may be IP-blocked from here."
+ },
+ "Dubbo Regional Council": {
+  "url": "https://planning.dubbo.nsw.gov.au/Application/ApplicationDetails/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView; Cloudflare challenge from this machine - not verified; type code unconfirmed."
+ },
+ "Dungog Shire Council": {
+  "url": "https://www.dungog.nsw.gov.au/Plan-Develop/Application-Tracker",
+  "ref": "none",
+  "kind": "home",
+  "checked": false,
+  "note": "Council website DA page from the NSW Planning Portal council-tracker list; no deep link known."
+ },
+ "Edward River Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Council uses the NSW Planning Portal only (not on the Portal's council-tracker list). Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Elliston (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Eurobodalla Shire Council": {
+  "url": "https://esc-web.t1cloud.com/T1PRDefault/WebApps/eProperty/P1/eTrack/eTrackApplicationDetails.aspx?ApplicationId={ref}&f=%24P1.ETR.APPDET.VIW&r=ESC.P1.WEBGUEST",
+  "ref": "urlencode",
+  "kind": "deep",
+  "checked": false,
+  "note": "TechnologyOne eProperty eTrack. Pattern taken from PlanningAlerts link. *.t1cloud.com blocks this machine's IP (TechnologyOne SaaS 'IP blocked' page), so could not fetch; should work from AU."
+ },
+ "Fairfield City Council": {
+  "url": "https://openaccess.fairfieldcity.nsw.gov.au/OpenAccess/Modules/Applicationmaster/Default.aspx",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "Legacy MasterView \"Application Master\" (OpenAccess). Not on PlanningAlerts; no ref-based deep link known. Ref format e.g. \"DA 251.1/2026\"."
+ },
+ "Federation Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Council uses the NSW Planning Portal only (not on the Portal's council-tracker list). Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Flinders Ranges (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Forbes Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Not on PlanningAlerts with recent apps and not on the NSW Planning Portal council-tracker list; no tracker found. Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Franklin Harbour (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Gawler (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Georges River Council": {
+  "url": "https://etrack.georgesriver.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "XC.Track tracker: deep links need an internal numeric id (SearchApplication.aspx?id=NNN), not the council ref; ref lookup is via a POST autocomplete only. Fallback is the search page (type the ref)."
+ },
+ "Gilgandra Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Not on PlanningAlerts with recent apps and not on the NSW Planning Portal council-tracker list; no tracker found. Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Glen Innes Severn Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Not on PlanningAlerts with recent apps and the the NSW Planning Portal council-tracker list; no tracker found. (Portal list entry for Glen Innes points to Goulburn Mulwaree's T1 tracker - looks like a Portal error.) Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Goulburn Mulwaree Council": {
+  "url": "https://gmc-web.t1cloud.com/T1PRDefault/WebApps/eProperty/P1/eTrack/eTrackApplicationDetails.aspx?ApplicationId={ref}&f=%24P1.ETR.APPDET.VIW&r=P1.WEBGUEST",
+  "ref": "urlencode",
+  "kind": "deep",
+  "checked": false,
+  "note": "TechnologyOne eProperty eTrack. Pattern taken from PlanningAlerts link. *.t1cloud.com blocks this machine's IP (TechnologyOne SaaS 'IP blocked' page), so could not fetch; should work from AU. PA example ApplicationId=DA/0084/2627 matches our ref format exactly."
+ },
+ "Goyder (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Greater Hume Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Council uses the NSW Planning Portal only (not on the Portal's council-tracker list). Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Griffith City Council": {
+  "url": "https://datracking.griffith.nsw.gov.au/Application/ApplicationDetails/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView. Host resets connections from this machine - not fetched, but mapping confirmed via PlanningAlerts."
+ },
+ "Gunnedah Shire Council": {
+  "url": "http://datracking.gunnedah.nsw.gov.au/Application/ApplicationDetails/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView; PA maps 2026/122/1 -> 010.2026.00000122.001. Hostname does not resolve from this machine (may be AU-only DNS or retired)."
+ },
+ "Gwydir Shire Council": {
+  "url": "https://datracker.gwydir.nsw.gov.au/Horizon/logonGuest.aw?domain=horizondap2#/home",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "Horizon (Solorient) tracker: session-based guest login, no deep link. Fallback = guest logon/home."
+ },
+ "Hawkesbury City Council": {
+  "url": "https://hawkesbury-web.t1cloud.com/T1PRDefault/WebApps/eProperty/P1/eTrack/eTrackApplicationDetails.aspx?ApplicationId={ref}&f=%24P1.ETR.APPDET.VIW&r=HCC.PR.WEBGUEST",
+  "ref": "urlencode",
+  "kind": "deep",
+  "checked": false,
+  "note": "TechnologyOne eProperty eTrack. Pattern taken from PlanningAlerts link. *.t1cloud.com blocks this machine's IP (TechnologyOne SaaS 'IP blocked' page), so could not fetch; should work from AU."
+ },
+ "Hay Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Council uses the NSW Planning Portal only (not on the Portal's council-tracker list). Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Hilltops Council": {
+  "url": "https://hilltops-web.t1cloud.com/T1PRDefault/WebApps/eProperty/P1/eTrack/eTrackApplicationDetails.aspx?ApplicationId={ref}&f=%24P1.ETR.APPDET.VIW&r=P1.WEBGUEST",
+  "ref": "urlencode",
+  "kind": "deep",
+  "checked": false,
+  "note": "TechnologyOne eProperty eTrack. Pattern taken from PlanningAlerts link. *.t1cloud.com blocks this machine's IP (TechnologyOne SaaS 'IP blocked' page), so could not fetch; should work from AU."
+ },
+ "Holdfast Bay (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Inner West Council": {
+  "url": "https://innerwest.t1cloud.com/T1Default/CiAnywhere/Web/INNERWEST/Public/LogOn/PRONLINESERVICE",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "TechnologyOne CiAnywhere portal (t1cloud, IP-blocked from here); no ref-based deep link known. Fallback = portal/search page."
+ },
+ "Inverell Shire Council": {
+  "url": "https://epathway.inverell.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "Infor ePathway: session-based, no deep link. Fallback = enquiry list page; user picks the application search and enters the ref."
+ },
+ "Ipswich City Council": {
+  "url": "https://developmenti.ipswich.qld.gov.au/Home/FilterDirect?filters=DANumber={ref}",
+  "ref": "none",
+  "kind": "deep",
+  "checked": false,
+  "note": "Development.i FilterDirect link (same pattern PlanningAlerts uses). Verified 200 'Results | Development.i' page; results are rendered by JS so the ref is not in the raw HTML."
+ },
+ "Junee Shire Council": {
+  "url": "https://www.junee.nsw.gov.au/council/access-to-information/open-access-information/",
+  "ref": "none",
+  "kind": "home",
+  "checked": true,
+  "note": "Portal tracker list points to council open-access page; PA only has Planning Portal exhibition pages."
+ },
+ "Kangaroo Island (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Karoonda East Murray (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Kempsey Shire Council": {
+  "url": "https://kempsey.greenlightopm.com/search-applications",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "Greenlight OPM: PlanningAlerts deep links use an internal trackingNumber, not the ref; search UI is a JS app. Fallback = search page."
+ },
+ "Kimba (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Kingston (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Ku-ring-gai Council": {
+  "url": "https://krg-web.t1cloud.com/T1PRDefault/WebApps/eProperty/P1/eTrack/eTrackApplicationDetails.aspx?ApplicationId={ref}&f=%24P1.ETR.APPDET.VIW&r=KC_WEBGUEST",
+  "ref": "urlencode",
+  "kind": "deep",
+  "checked": false,
+  "note": "TechnologyOne eProperty eTrack. Pattern taken from PlanningAlerts link. *.t1cloud.com blocks this machine's IP (TechnologyOne SaaS 'IP blocked' page), so could not fetch; should work from AU."
+ },
+ "Kyogle Council": {
+  "url": "https://eservices.kyogle.nsw.gov.au/eservice/daEnquiryInit.do?doc_typ=10&nodeNum=9020",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "Civica e-Services DA enquiry (council page redirects here); returned 403 to this machine."
+ },
+ "Lachlan Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Not on PlanningAlerts with recent apps and not on the NSW Planning Portal council-tracker list; no tracker found. Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Lake Macquarie City Council": {
+  "url": "https://property.lakemac.com.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "Infor ePathway: session-based, no deep link. Fallback = enquiry list page; user picks the application search and enters the ref."
+ },
+ "Lane Cove Municipal Council": {
+  "url": "https://www.lanecove.nsw.gov.au/Services/Online-Services/Development-and-Compliance/Track-a-development-application",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "Our council_reference for Lane Cove is the Planning Portal PAN (e.g. PAN-684039), not the council DA number; council tracker deep links use DANum=DA2026/00000017-01 style (ecouncil.lanecove.nsw.gov.au/trim/DAInformation2-mobile.asp?DANum=...). Fallback = tracker page."
+ },
+ "Leeton Shire Council": {
+  "url": "https://leeton.elementorg.com/public-pages/development-applications/",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "ElementOrg public DA pages (PlanningAlerts lists Leeton under Horizon scraper but portal links here); no deep link."
+ },
+ "Light Regional (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Lismore City Council": {
+  "url": "https://www.lismore-nsw.altitudelg.com/e-services/",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "Old MasterView tracker (tracker.lismore.nsw.gov.au) now redirects to Altitude (Civica) e-services; that host is behind a Cloudflare challenge from this machine, so no deep link could be worked out. Use search page with the ref (e.g. 5.2026.309.1)."
+ },
+ "Lithgow City Council": {
+  "url": "https://lithgowcc-web.t1cloud.com/T1PRDefault/WebApps/eProperty/P1/eTrack/eTrackApplicationDetails.aspx?ApplicationId={ref}&f=%24P1.ETR.APPDET.VIW&r=P1.WEBGUEST",
+  "ref": "urlencode",
+  "kind": "deep",
+  "checked": false,
+  "note": "TechnologyOne eProperty eTrack. Pattern taken from PlanningAlerts link. *.t1cloud.com blocks this machine's IP (TechnologyOne SaaS 'IP blocked' page), so could not fetch; should work from AU. PA example ApplicationId=DA177/26 is the same ref as in our data."
+ },
+ "Liverpool City Council": {
+  "url": "https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "XC.Track tracker: deep links need an internal numeric id (SearchApplication.aspx?id=NNN), not the council ref; ref lookup is via a POST autocomplete only. Fallback is the search page (type the ref)."
+ },
+ "Liverpool Plains Shire Council": {
+  "url": "https://mycouncil.solorient.com.au/Horizon/logonGuest.aw?domain=horizondap_lpsc#/home",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "Horizon (Solorient) tracker: session-based guest login, no deep link. Fallback = guest logon/home."
+ },
+ "Lockhart Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Not on PlanningAlerts with recent apps and not on the NSW Planning Portal council-tracker list; no tracker found. Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Logan City Council": {
+  "url": "https://devet.loganhub.com.au/#/applications/{ref}",
+  "ref": "slash_to_dash",
+  "kind": "deep",
+  "checked": false,
+  "note": "Logan 'Development Enquiry Tool' SPA (pattern from PlanningAlerts). Verified 200 shell page; content is JS-rendered (hash route) so ref not in raw HTML."
+ },
+ "Lower Eyre (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Loxton Waikerie (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Maitland City Council": {
+  "url": "https://myhorizon.maitland.nsw.gov.au/Horizon/embed.html",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "Horizon (Solorient) tracker: session-based guest login, no deep link. Fallback = guest logon/home."
+ },
+ "Marion (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Mid Murray (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Mid-Coast Council": {
+  "url": "https://www.midcoast.nsw.gov.au/Development/Application-search-and-tracking/Application-tracking",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanningAlerts links only to this council page (tracker is TechnologyOne CiAnywhere); no deep link."
+ },
+ "Mid-Western Regional Council": {
+  "url": "https://midwestern-web.t1cloud.com/T1PRDefault/WebApps/eProperty/P1/eTrack/eTrackApplicationDetails.aspx?ApplicationId={ref}&f=%24P1.ETR.APPDET.VIW&r=P1.WEBGUEST",
+  "ref": "urlencode",
+  "kind": "deep",
+  "checked": false,
+  "note": "TechnologyOne eProperty eTrack. Pattern taken from PlanningAlerts link. *.t1cloud.com blocks this machine's IP (TechnologyOne SaaS 'IP blocked' page), so could not fetch; should work from AU."
+ },
+ "Mitcham (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Moree Plains Shire Council": {
+  "url": "https://www.mpsc.nsw.gov.au/plan-develop-and-compliance/lodging-a-development-application/tracking-your-application",
+  "ref": "none",
+  "kind": "home",
+  "checked": true,
+  "note": "Council website DA page from the NSW Planning Portal council-tracker list; no deep link known."
+ },
+ "Moreton Bay Regional Council": {
+  "url": "{raw.DA_TRACKER_URL}",
+  "ref": "none",
+  "kind": "deep",
+  "checked": false,
+  "note": "Per-application tracker URL already in raw.DA_TRACKER_URL (not re-verified, as instructed)."
+ },
+ "Mosman Municipal Council": {
+  "url": "https://applicationtracker.mosman.nsw.gov.au/eservice/daEnquiryInit.do?doc_typ=8&nodeNum=119608",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "Civica Authority e-Services: results are session-based (GET search by number returns 'Navigation Problem'); fallback = DA enquiry form."
+ },
+ "Mount Barker (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Mount Gambier (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Mount Remarkable (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Murray Bridge (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Murray River Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Council uses the NSW Planning Portal only (not on the Portal's council-tracker list). Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Murrumbidgee Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Council uses the NSW Planning Portal only (not on the Portal's council-tracker list). Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Muswellbrook Shire Council": {
+  "url": "https://datracker.muswellbrook.nsw.gov.au/Application/ApplicationDetails/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView tracker; redirects to a Disclaimer page first (requires Agree, after which the deep link works). Not verifiable without Agree."
+ },
+ "Nambucca Valley Council": {
+  "url": "https://eservices.nambucca.nsw.gov.au/eservice/daEnquiryInit.do?nodeNum=6910",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "Civica Authority e-Services: results are session-based (GET search by number returns 'Navigation Problem'); fallback = DA enquiry form."
+ },
+ "Naracoorte Lucindale (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Narrabri Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Council uses the NSW Planning Portal only (not on the Portal's council-tracker list). Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Narrandera Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Not on PlanningAlerts with recent apps and not on the NSW Planning Portal council-tracker list; no tracker found. Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Narromine Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Council uses the NSW Planning Portal only (not on the Portal's council-tracker list). Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Newcastle City Council": {
+  "url": "https://www.newcastle.nsw.gov.au/development/development-information-for-the-community/application-tracker",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "TechnologyOne DXP tracker (cn.t1cloud.com/apps/Applications/Details/.../Application_Details/<internal id>) needs an internal id; fallback to council tracker page."
+ },
+ "North Sydney Council": {
+  "url": "https://masterview.northsydney.nsw.gov.au/Application/ApplicationDetails/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView tracker; redirects to a Disclaimer page first (requires Agree, after which the deep link works). Not verifiable without Agree; type code unconfirmed."
+ },
+ "Northern Areas (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Northern Beaches Council": {
+  "url": "https://eservices.northernbeaches.nsw.gov.au/ePlanning/live/Public/XC.Track/SearchApplication.aspx",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "XC.Track tracker: deep links need an internal numeric id (SearchApplication.aspx?id=NNN), not the council ref; ref lookup is via a POST autocomplete only. Fallback is the search page (type the ref)."
+ },
+ "Norwood Payneham and St Peters (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Oberon Council": {
+  "url": "https://www.oberon.nsw.gov.au/Planning-and-Development/Development-Application-Tracker",
+  "ref": "none",
+  "kind": "home",
+  "checked": false,
+  "note": "Council website DA page from the NSW Planning Portal council-tracker list; no deep link known."
+ },
+ "Onkaparinga (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Orange City Council": {
+  "url": "https://www.orange.nsw.gov.au/planning-development/news/",
+  "ref": "none",
+  "kind": "home",
+  "checked": false,
+  "note": "Orange publishes weekly \"DAs received\" news posts (that is what PlanningAlerts links to); no tracker."
+ },
+ "PASTORAL UNINCORPORATED AREA (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Parkes Shire Council": {
+  "url": "https://parkes-web.t1cloud.com/T1PRDefault/WebApps/eProperty/P1/eTrack/eTrackApplicationDetails.aspx?ApplicationId={ref}&f=%24P1.ETR.APPDET.VIW&r=PSC.P1.WEBGUEST",
+  "ref": "urlencode",
+  "kind": "deep",
+  "checked": false,
+  "note": "TechnologyOne eProperty eTrack. Pattern taken from PlanningAlerts link. *.t1cloud.com blocks this machine's IP (TechnologyOne SaaS 'IP blocked' page), so could not fetch; should work from AU."
+ },
+ "Penrith City Council": {
+  "url": "https://datracker.penrithcity.nsw.gov.au/track/Pages/XC.Track/SearchApplication.aspx",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "XC.Track tracker: deep links need an internal numeric id (SearchApplication.aspx?id=NNN), not the council ref; ref lookup is via a POST autocomplete only. Fallback is the search page (type the ref). Checked: detail page by id works (200)."
+ },
+ "Playford (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Port Adelaide Enfield (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Port Augusta (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Port Lincoln (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Port Macquarie-Hastings Council": {
+  "url": "https://datracker.pmhc.nsw.gov.au/Application/ApplicationDetails/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView tracker; redirects to a Disclaimer page first (requires Agree, after which the deep link works). Host resets connections from this machine; DA type code unconfirmed."
+ },
+ "Port Pirie (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Port Stephens Council": {
+  "url": "https://datracker.portstephens.nsw.gov.au/Application/ApplicationDetails/{ref}",
+  "ref": "masterview_dash",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView tracker; redirects to a Disclaimer page first (requires Agree, after which the deep link works). Format from PlanningAlerts link. Host resets connections from this machine (geo-block)."
+ },
+ "Prospect (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Queanbeyan-Palerang Regional Council": {
+  "url": "https://qprc-web.t1cloud.com/T1PRDefault/WebApps/eProperty/P1/eTrack/eTrackApplicationDetails.aspx?ApplicationId={ref}&f=%24P1.ETR.APPDET.VIW&r=P1.WEBGUEST",
+  "ref": "urlencode",
+  "kind": "deep",
+  "checked": false,
+  "note": "TechnologyOne eProperty eTrack. Pattern taken from PlanningAlerts link. *.t1cloud.com blocks this machine's IP (TechnologyOne SaaS 'IP blocked' page), so could not fetch; should work from AU."
+ },
+ "Randwick City Council": {
+  "url": "https://onlineservices.randwick.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "Infor ePathway: session-based, no deep link. Fallback = enquiry list page; user picks the application search and enters the ref."
+ },
+ "Redland City Council": {
+  "url": "https://developmenti.redland.qld.gov.au/Home/FilterDirect?filters=DANumber={ref}",
+  "ref": "none",
+  "kind": "deep",
+  "checked": false,
+  "note": "Development.i FilterDirect link (same pattern PlanningAlerts uses). Verified 200 'Results | Development.i' page; results are rendered by JS so the ref is not in the raw HTML."
+ },
+ "Renmark Paringa (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Richmond Valley Council": {
+  "url": "https://apptracker.richmondvalley.nsw.gov.au/applicationsview/",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "eplanning.io (Power Pages) tracker; detail pages use /details/?id=<GUID>, not the ref."
+ },
+ "Robe (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Roxby Downs (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Ryde City Council": {
+  "url": "https://ryde-web.t1cloud.com/T1PRDefault/WebApps/eProperty/P1/eTrack/eTrackApplicationDetails.aspx?ApplicationId={ref}&f=%24P1.ETR.APPDET.VIW&r=COR.P1.WEBGUEST",
+  "ref": "urlencode",
+  "kind": "deep",
+  "checked": false,
+  "note": "TechnologyOne eProperty eTrack. Pattern taken from PlanningAlerts link. *.t1cloud.com blocks this machine's IP (TechnologyOne SaaS 'IP blocked' page), so could not fetch; should work from AU."
+ },
+ "Salisbury (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Shellharbour City Council": {
+  "url": "https://shbr-web.t1cloud.com/T1PRDefault/WebApps/eProperty/P1/eTrack/eTrackApplicationDetails.aspx?ApplicationId={ref}&f=%24P1.ETR.APPDET.VIW&r=SCC.WEBGUEST",
+  "ref": "urlencode",
+  "kind": "deep",
+  "checked": false,
+  "note": "TechnologyOne eProperty eTrack. Pattern taken from PlanningAlerts link. *.t1cloud.com blocks this machine's IP (TechnologyOne SaaS 'IP blocked' page), so could not fetch; should work from AU."
+ },
+ "Shoalhaven City Council": {
+  "url": "https://scc-web.t1cloud.com/T1PRDefault/WebApps/eProperty/P1/eTrack/eTrackApplicationDetails.aspx?ApplicationId={ref}&f=%24P1.ETR.APPDET.VIW&r=SCC.WEBGUEST",
+  "ref": "urlencode",
+  "kind": "deep",
+  "checked": false,
+  "note": "TechnologyOne eProperty eTrack. Pattern taken from PlanningAlerts link. *.t1cloud.com blocks this machine's IP (TechnologyOne SaaS 'IP blocked' page), so could not fetch; should work from AU."
+ },
+ "Singleton Council": {
+  "url": "https://datracker.singleton.nsw.gov.au/Application/ApplicationDetails/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView; format from PlanningAlerts (12.2023.618.1 -> 012.2023.00000618.001). Cloudflare challenge from this machine - not verified."
+ },
+ "Snowy Monaro Regional Council": {
+  "url": "https://www.snowymonaro.nsw.gov.au/Building-and-Planning/Development/Development-Applications",
+  "ref": "none",
+  "kind": "home",
+  "checked": false,
+  "note": "Council website DA page from the NSW Planning Portal council-tracker list; no deep link known."
+ },
+ "Snowy Valleys Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Council uses the NSW Planning Portal only (not on the Portal's council-tracker list). Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Southern Limestone Coast (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Southern Mallee (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Strathfield Municipal Council": {
+  "url": "https://datracker.strathfield.nsw.gov.au/Application/ApplicationDetails/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView tracker; redirects to a Disclaimer page first (requires Agree, after which the deep link works). Not verifiable without Agree."
+ },
+ "Streaky Bay (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Sunshine Coast Regional Council": {
+  "url": "https://developmenti.sunshinecoast.qld.gov.au/Home/FilterDirect?filters=DANumber={ref}",
+  "ref": "none",
+  "kind": "deep",
+  "checked": false,
+  "note": "Development.i FilterDirect link (same pattern PlanningAlerts uses). Verified 200 'Results | Development.i' page; results are rendered by JS so the ref is not in the raw HTML."
+ },
+ "Sutherland Shire Council": {
+  "url": "https://ssc.t1cloud.com/T1Default/CiAnywhere/Web/SSC/Public/Function/$P1.COM.APPLNDAT.ENQ/PR_PORTAL?suite=PR",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "TechnologyOne CiAnywhere portal (t1cloud, IP-blocked from here); no ref-based deep link known. Fallback = portal/search page. This is the application enquiry function PlanningAlerts links to."
+ },
+ "Tamworth Regional Council": {
+  "url": "https://tamworth-web.t1cloud.com/T1PRDefault/WebApps/eProperty/P1/eTrack/eTrackApplicationDetails.aspx?ApplicationId={ref}&f=%24P1.ETR.APPDET.VIW&r=P1.WEBGUEST",
+  "ref": "urlencode",
+  "kind": "deep",
+  "checked": false,
+  "note": "TechnologyOne eProperty eTrack. Pattern taken from PlanningAlerts link. *.t1cloud.com blocks this machine's IP (TechnologyOne SaaS 'IP blocked' page), so could not fetch; should work from AU."
+ },
+ "Tatiara (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Tea Tree Gully (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Temora Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Not on PlanningAlerts with recent apps and not on the NSW Planning Portal council-tracker list; no tracker found. Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Tenterfield Shire Council": {
+  "url": "https://www.tenterfield.nsw.gov.au/services/building-planning/approved-and-advertised-development-applications",
+  "ref": "none",
+  "kind": "home",
+  "checked": true,
+  "note": "Council website DA page from the NSW Planning Portal council-tracker list; no deep link known."
+ },
+ "The Council of the Municipality of Hunters Hill": {
+  "url": "https://eplanning.huntershill.nsw.gov.au/Public/ViewActivity.aspx?refid={ref}",
+  "ref": "none",
+  "kind": "deep",
+  "checked": true,
+  "note": "Verified: 200, page contains ref and address."
+ },
+ "The Council of the Municipality of Kiama": {
+  "url": "https://www.kiama-nsw.altitudelg.com/e-services/start.do",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "Altitude (ex-Civica) e-services; no deep link by ref."
+ },
+ "The Council of the Shire of Hornsby": {
+  "url": "https://hornsbyprd-pwy-epw.cloud.infor.com/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "Infor ePathway: session-based, no deep link. Fallback = enquiry list page; user picks the application search and enters the ref."
+ },
+ "The Hills Shire Council": {
+  "url": "https://epathway.thehills.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "Infor ePathway: session-based, no deep link. Fallback = enquiry list page; user picks the application search and enters the ref."
+ },
+ "Toowoomba Regional Council": {
+  "url": "https://developmenti.tr.qld.gov.au/Home/FilterDirect?filters=DANumber={ref}",
+  "ref": "none",
+  "kind": "deep",
+  "checked": false,
+  "note": "Development.i FilterDirect link (same pattern PlanningAlerts uses). Verified 200 'Results | Development.i' page; results are rendered by JS so the ref is not in the raw HTML."
+ },
+ "Tumby Bay (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Tweed Shire Council": {
+  "url": "https://s1.tweed.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "XC.Track tracker: deep links need an internal numeric id (SearchApplication.aspx?id=NNN), not the council ref; ref lookup is via a POST autocomplete only. Fallback is the search page (type the ref)."
+ },
+ "Unley (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Upper Hunter Shire Council": {
+  "url": "https://onlineservices.upperhunter.nsw.gov.au/Application/ApplicationDetails/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": false,
+  "note": "MasterView tracker; redirects to a Disclaimer page first (requires Agree, after which the deep link works). Host resets connections from this machine."
+ },
+ "Upper Lachlan Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Council uses the NSW Planning Portal only (not on the Portal's council-tracker list). Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Uralla Shire Council": {
+  "url": "https://www.uralla.nsw.gov.au/Council-Services/Building-Development/Development-Application-Tracking",
+  "ref": "none",
+  "kind": "home",
+  "checked": false,
+  "note": "Council website DA page from the NSW Planning Portal council-tracker list; no deep link known."
+ },
+ "Victor Harbor (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Wagga Wagga City Council": {
+  "url": "https://wagga-web.t1cloud.com/T1PRDefault/WebApps/eProperty/P1/WWCustom/eTrack/DATrack.aspx?f=WW.P1.EPR.DATR.VIW",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "Custom T1 DA tracker (IP-blocked from here). PlanningAlerts links to ECM document folders by internal id (data.wagga.nsw.gov.au/tech1/api/public/ecm/folder/<id>), not derivable from ref."
+ },
+ "Wakefield (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Walgett Shire Council": {
+  "url": "https://www.walgett.nsw.gov.au/Departments/Planning/Planning-and-Development-Information/Development-assessment",
+  "ref": "none",
+  "kind": "home",
+  "checked": true,
+  "note": "Council website DA page from the NSW Planning Portal council-tracker list; no deep link known."
+ },
+ "Walkerville (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Warren Shire Council": {
+  "url": "https://www.planningportal.nsw.gov.au/daexhibitions?field_council_unique_number_value={ref}&field_daex_status_value=All",
+  "ref": "urlencode",
+  "kind": "search",
+  "checked": true,
+  "note": "Not on PlanningAlerts with recent apps and not on the NSW Planning Portal council-tracker list; no tracker found. Fallback = NSW Planning Portal 'DA Exhibitions' search pre-filtered by council reference (verified for Federation 10.2026.160.1: returns the exhibition page with documents). Only finds DAs the council exhibited on the Portal; otherwise shows 0 results."
+ },
+ "Warrumbungle Shire Council": {
+  "url": "https://www.warrumbungle.nsw.gov.au/planning-development/online-da-tracking",
+  "ref": "none",
+  "kind": "home",
+  "checked": false,
+  "note": "Council website DA page from the NSW Planning Portal council-tracker list; no deep link known."
+ },
+ "Wattle Range (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Waverley Council": {
+  "url": "https://epwgate.waverley.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "Infor ePathway: session-based, no deep link. Fallback = enquiry list page; user picks the application search and enters the ref."
+ },
+ "Weddin Shire Council": {
+  "url": "https://mycouncil.solorient.com.au/Horizon/logonGuest.aw?domain=horizondap_weddin#/home",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "Horizon (Solorient) tracker: session-based guest login, no deep link. Fallback = guest logon/home."
+ },
+ "Wentworth Shire Council": {
+  "url": "https://www.wentworth.nsw.gov.au/planning-development/planning/development-applications-on-public-exhibition/",
+  "ref": "none",
+  "kind": "home",
+  "checked": true,
+  "note": "Council website DA page from the NSW Planning Portal council-tracker list; no deep link known."
+ },
+ "West Torrens (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Western Downs Regional Council": {
+  "url": "https://developmenti.wdrc.qld.gov.au/Home/FilterDirect?filters=DANumber={ref}",
+  "ref": "none",
+  "kind": "deep",
+  "checked": false,
+  "note": "Development.i FilterDirect link (same pattern PlanningAlerts uses). Verified 200 'Results | Development.i' page; results are rendered by JS so the ref is not in the raw HTML."
+ },
+ "Whyalla (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Willoughby City Council": {
+  "url": "https://www.willoughby.nsw.gov.au/Development/Get-approval/Development-applications/DA-tracker-20-11-2024/Application-tracker",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanningAlerts links only to this council tracker page; no deep link."
+ },
+ "Wingecarribee Shire Council": {
+  "url": "https://apptracker.wsc.nsw.gov.au/applicationsview/",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "eplanning.io (Power Pages) tracker; detail pages use /details/?id=<GUID>, not the ref."
+ },
+ "Wollondilly Shire Council": {
+  "url": "https://tracking.wollondilly.nsw.gov.au/detail/{ref}",
+  "ref": "masterview",
+  "kind": "deep",
+  "checked": false,
+  "note": "Host resets connections from this machine - not fetched; mapping confirmed via PlanningAlerts."
+ },
+ "Wollongong City Council": {
+  "url": "https://wcc.t1cloud.com/T1Default/CiAnywhere/Web/WCC/Public/LogOn/PR_ONLINE_PORTAL",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "TechnologyOne CiAnywhere portal (t1cloud, IP-blocked from here); no ref-based deep link known. Fallback = portal/search page."
+ },
+ "Woollahra Municipal Council": {
+  "url": "https://auth.woollahra.nsw.gov.au/eservice/daEnquiryInit.do?nodeNum=5270",
+  "ref": "none",
+  "kind": "search",
+  "checked": true,
+  "note": "Civica Authority e-Services: results are session-based (GET search by number returns 'Navigation Problem'); fallback = DA enquiry form."
+ },
+ "Yankalilla (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ },
+ "Yass Valley Council": {
+  "url": "https://www.yassvalley.nsw.gov.au/Our-Services/Planning-and-Building/Development-Applications-on-exhibition",
+  "ref": "none",
+  "kind": "home",
+  "checked": false,
+  "note": "Council exhibition page; PA links to Planning Portal exhibition pages only."
+ },
+ "Yorke Peninsula (SA)": {
+  "url": "https://plan.sa.gov.au/development_application_register",
+  "ref": "none",
+  "kind": "search",
+  "checked": false,
+  "note": "PlanSA DA register (state-wide). plan.sa.gov.au is behind a Cloudflare challenge from this machine; no public per-application URL by application ID could be confirmed (PlanningAlerts only links notified apps to have_your_say/...submission?aid=<internal id>). Fallback = register search page; search by the 8-digit application ID ({ref})."
+ }
+}

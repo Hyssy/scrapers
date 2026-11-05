@@ -64,3 +64,12 @@ is set.
 python push_monday.py 2026-10-16 --dry-run   # preview
 MONDAY_API_TOKEN=... python push_monday.py    # last 7 days
 ```
+
+## Council links
+
+`links.py` + `council_links.json` build the "Council Link" for each item: a
+direct link to the DA on the council's tracker where the council's system
+allows it (`kind: deep`), otherwise the council's DA search page. MasterView
+trackers need the reference rewritten (e.g. `10.2026.567.1` →
+`010.2026.00000567.001`), which `links.py` handles. Edit `council_links.json`
+to fix or add a council.
