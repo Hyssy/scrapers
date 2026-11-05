@@ -28,7 +28,12 @@ GROUP_CHILDCARE_MEDICAL = "new_group71055"  # New Leads - Childcare & Medical
 # filters.py tag -> "Industry" status label
 INDUSTRY = {"childcare": "Childcare", "medical": "Medical", "veterinary": "Vet", "hospital": "Hospital"}
 
-STATE_LABEL = {"nsw_planning_portal": "NSW & ACT"}
+STATE_LABEL = {
+    "nsw_planning_portal": "NSW & ACT",
+    "act_dafinder": "NSW & ACT",
+    "qld_councils": "QLD & NT",
+    "sa_plansa": "WA & SA",
+}
 
 # NSW Planning Portal council names -> existing "Council" dropdown labels on the board
 COUNCIL_ALIASES = {
@@ -64,7 +69,7 @@ def build_item(row, tags):
         "date": {"date": date.today().isoformat()},
     }
     if row.get("info_url"):
-        columns["link"] = {"url": row["info_url"], "text": "Planning Portal"}
+        columns["link"] = {"url": row["info_url"], "text": "Council Link"}
     return {
         "key": row["id"],
         "name": (row["council_reference"] or row["id"])[:255],

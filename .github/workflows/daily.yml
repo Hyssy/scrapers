@@ -33,6 +33,18 @@ jobs:
       - name: NSW Planning Portal (DA, CDC, CC)
         run: python sources/nsw_planning_portal.py
 
+      - name: ACT DA Finder
+        run: python sources/act_dafinder.py
+        continue-on-error: true
+
+      - name: SA PlanSA register
+        run: python sources/sa_plansa.py
+        continue-on-error: true
+
+      - name: QLD councils (Development.i, Logan, Moreton Bay)
+        run: python sources/qld_councils.py
+        continue-on-error: true
+
       # Needs a repo secret called MONDAY_API_TOKEN (Settings > Secrets and variables > Actions).
       - name: Push matches to monday.com
         env:

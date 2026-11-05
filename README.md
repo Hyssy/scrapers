@@ -8,6 +8,9 @@ into one SQLite database, ready to push into monday.com.
 | Source | File | Coverage | Method |
 |---|---|---|---|
 | NSW Planning Portal | `sources/nsw_planning_portal.py` | ~122 NSW councils: DAs, CDCs and construction certificates | Official public APIs (no scraping) |
+| ACT DA Finder | `sources/act_dafinder.py` | Whole ACT | ACT Government ArcGIS layer |
+| PlanSA register | `sources/sa_plansa.py` | All SA councils | PlanSA ArcGIS layer (public but undocumented) |
+| QLD councils | `sources/qld_councils.py` | Brisbane, Ipswich, Redland, Sunshine Coast, Toowoomba, Western Downs (Development.i JSON); Logan, Moreton Bay (open data) | JSON / ArcGIS |
 
 More states to come — preference order: official API/open data → shared tracker
 platform (one scraper, many councils) → one-off council scraper.
